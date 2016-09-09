@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="307.0">
+         <children>
+            <Button fx:id="button7" layoutX="20.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="7" />
+            <Button fx:id="button8" layoutX="87.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="8" />
+            <Button fx:id="button9" layoutX="157.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="9" />
+            <Button fx:id="button_multiply" layoutX="226.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="*" />
+            <Button fx:id="button4" layoutX="19.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="4" />
+            <Button fx:id="button5" layoutX="86.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="5" />
+            <Button fx:id="button6" layoutX="156.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="6" />
+            <Button fx:id="button_divide" layoutX="225.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="/" />
+            <Button fx:id="button1" layoutX="19.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="1" />
+            <Button fx:id="button2" layoutX="86.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="2" />
+            <Button fx:id="button3" layoutX="156.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="3" />
+            <Button fx:id="button_minus" layoutX="225.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="-" />
+            <Button fx:id="button0" layoutX="19.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="0" />
+            <Button fx:id="button_clear" layoutX="87.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="C" />
+            <Button fx:id="button_plus" layoutX="225.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="+" />
+            <TextField fx:id="textField" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="56.0" prefHeight="103.0" prefWidth="268.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TextField>
+            <Button fx:id="button_equals" layoutX="156.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="62.0" text="=" />
+            <MenuBar prefHeight="29.0" prefWidth="307.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#closeAction" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="About" />
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
